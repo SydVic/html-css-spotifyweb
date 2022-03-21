@@ -75,10 +75,12 @@ a.spotify-logo img{
 }
 
 /* MAIN */ /* PLAYLIST SECTION */
-div.main-playlists{
+div.main-albums{
     width: calc(100% - 200px);
 }
 
+
+/* MAIN */ /* SIDEBAR SECTION */
 img.sidebar-img{
     width:15%;
     filter: invert(67%) sepia(0%) saturate(2274%) hue-rotate(22deg) brightness(103%) contrast(75%);
@@ -130,7 +132,7 @@ a.sidebar-icon > i{
     margin-right: .5rem;
 }
 
-/* MAIN */ /* PROFILE SECTION */
+/* MAIN */ /* SIDEBAR PROFILE SECTION */
 div.sidebar-end{
     padding: 0 0 1rem 2rem;
 }
@@ -158,6 +160,14 @@ span.profile-name{
     font-weight: bold;
 }
 
+div.sidebar-end a:hover span.sidebar-text{
+    color: #ffffff;
+}
+
+div.sidebar-end a:hover img.download-img{
+    filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(234deg) brightness(96%) contrast(107%);
+}
+
 /* FOOTER */
 footer{
     width: 100%;
@@ -165,7 +175,42 @@ footer{
     background-color: #282828;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
+
+div.footer-nav-left,
+div.footer-nav-right{
+    margin: 0 1.5rem 0 1.5rem;
+}
+
+div.footer-nav-left{
+    flex-direction: row;
+    align-items: center;
+}
+
+div.music-controls-icons{
+    text-align: center;
+}
+
+div.footer-nav-img > img{
+    height: 50px;
+}
+
+span.time-bar{
+    width: 35vw;
+    border: 3px solid #565656;
+    display: inline-block;
+}
+
+span.volume-bar{
+    width: 8vw;
+    border: 3px solid #565656;
+    display: inline-block;
+}
+
+
+
+
 
 /* TEST */
 .footer-nav-left,
