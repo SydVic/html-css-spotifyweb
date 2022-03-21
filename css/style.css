@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
 /* COMMON */
 html{
     font-family: "Montserrat", sans-serif;
@@ -25,7 +33,7 @@ main{
 
 /* MAIN */ /* UPGRADE BAR FIXED */
 div.main-upgrade{
-    width: 86%;
+    width: calc(100% - 200px);
     height: 100px;
     position: fixed;
     top: 0;
@@ -54,16 +62,43 @@ div.main-upgrade a:hover{
 }
 
 /* MAIN */ /* VERTICAL NAV BAR */
-div.main-nav{
-    width: 15%;
+div.sidebar-nav{
+    width: 200px;
     background-color: #000000;
-    color: white;
+    padding: 2rem 0 1rem 2rem;
+}
+
+a.spotify-logo img{
+    width: 70%;
+    margin-bottom: 3rem;
 }
 
 /* MAIN */ /* PLAYLIST SECTION */
 div.main-playlists{
-    width: 85%;
+    width: calc(100% - 200px);
 }
+
+img.sidebar-img{
+    width:15%;
+    filter: invert(67%) sepia(0%) saturate(2274%) hue-rotate(22deg) brightness(103%) contrast(75%);
+}
+
+span.sidebar-text{
+    color: #a3a3a3;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+span.sidebar-list-title{
+    text-transform: uppercase;
+}
+
+a.sidebar-icon > i{
+    color: #a3a3a3;
+    font-size: 3rem;
+    margin-right: .5rem;
+}
+
 
 /* FOOTER */
 footer{
