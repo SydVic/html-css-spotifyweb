@@ -117,23 +117,28 @@
             </div>
             <div class="footer-nav-text">
                 <span>Sinister</span>
-                <p>Nome Brano</p>
+                <a href="">Nome Brano</a>
+                <!-- <p>Nome Brano</p> -->
             </div>
             <div class="footer-nav-icons">
-                <i class="far fa-heart"></i>
-                <i class="far fa-folder"></i>
+                <a href="">
+                    <i class="far fa-heart"></i>
+                </a>
+                <a href="">
+                    <i class="far fa-folder"></i>
+                </a>
             </div>
         </div>
         <div class="footer-nav-center">
             <div class="music-controls">
-                <div class="music-controls-icons">
+                <div class="music-controls-icons flex">
                     <a href="">
                         <i class="fas fa-random"></i>
                     </a>
                     <a href="">
                         <i class="fas fa-step-backward"></i>
                     </a>
-                    <a href="">
+                    <a class="play" href="">
                         <i class="far fa-play-circle"></i>
                     </a>
                     <a href="">
@@ -145,7 +150,11 @@
                 </div>
                 <div class="music-controls-bar">
                     <span class="time">0:25</span>
-                    <span class="time-bar"></span>
+                    <div class="pos-relative">
+                        <span class="time-bar-grey"></span>
+                        <a class="time-bar-lightgrey" href=""></a>
+                        <!-- <a class="dot" href=""></a> -->
+                    </div>
                     <span class="time">4:35</span>
                 </div>
             </div>
@@ -160,7 +169,10 @@
             <a href="">
                 <i class="fas fa-volume-up"></i>
             </a>
-            <span class="volume-bar"></span>
+            <div class="pos-relative">
+                <span class="volume-bar-grey"></span>
+                <a class="volume-bar-lightgrey" href=""></a>
+            </div>
         </div>
     </footer>
     <!-- /FOOTER -->
