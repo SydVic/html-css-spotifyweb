@@ -8,6 +8,7 @@
 /* COMMON */
 html{
     font-family: "Montserrat", sans-serif;
+    font-size: 62.5%;
 }
 
 .flex{
@@ -31,7 +32,25 @@ div.main-upgrade{
     right: 0;
     z-index: 999;
     background-color: rgba(0, 0, 0, 0.3);
-    
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+div.main-upgrade a{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    padding: 1rem 3rem;
+    margin-right: 1.5rem;
+}
+
+div.main-upgrade a:hover{
+    transform: scale(1.1);
 }
 
 /* MAIN */ /* VERTICAL NAV BAR */
