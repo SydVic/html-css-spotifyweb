@@ -18,6 +18,12 @@ html{
     font-family: "Montserrat", sans-serif;
     font-size: 62.5%;
 }
+/* poi tutto il resto puoi farlo in % */
+/* div.container{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+} */
 
 .flex{
     display: flex;
@@ -32,6 +38,7 @@ main{
     height: calc(100vh - 100px);
     background-color: #141922;
     flex-direction: row;
+    overflow: hidden;
 }
 
 /* MAIN */ /* UPGRADE BAR FIXED */
@@ -76,12 +83,6 @@ div.sidebar-nav{
 a.spotify-logo img{
     width: 70%;
     padding: 2rem 0 1rem 2rem;
-}
-
-/* MAIN */ /* PLAYLIST SECTION */
-div.main-albums{
-    width: calc(100% - 200px);
-    overflow-y: auto;
 }
 
 /* MAIN */ /* SIDEBAR SECTION */
@@ -135,6 +136,17 @@ a.sidebar-icon > i{
     margin-right: .5rem;
 }
 
+div.playlist-overflow{
+    height: 400px;
+    overflow: hidden;
+}
+
+div.playlist-overflow ul{
+    height: 300px;
+    overflow-y: auto;
+}
+
+
 /* MAIN */ /* SIDEBAR PROFILE SECTION */
 div.sidebar-end{
     padding: 0 0 1rem 2rem;
@@ -169,6 +181,31 @@ div.sidebar-end a:hover span.sidebar-text{
 
 div.sidebar-end a:hover img.download-img{
     filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(234deg) brightness(96%) contrast(107%);
+}
+
+/* MAIN */ /* ALBUMS SECTION */
+div.main-albums{
+    width: calc(100% - 200px);
+    overflow-y: auto;
+    padding-top: 120px;
+}
+
+div.main-nav{
+    width: 100%;
+    text-align: center;
+    /* margin-top: 120px; */
+}
+
+div.main-nav li{
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+div.main-nav a{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #858585;
 }
 
 /* FOOTER */
