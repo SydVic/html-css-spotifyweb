@@ -32,7 +32,6 @@ main{
     height: calc(100vh - 100px);
     background-color: #141922;
     flex-direction: row;
-    overflow-y: auto;
 }
 
 /* MAIN */ /* UPGRADE BAR FIXED */
@@ -67,10 +66,11 @@ div.main-upgrade a:hover{
 
 /* MAIN */ /* VERTICAL NAV BAR */
 div.sidebar-nav{
+    height: calc(100vh - 100px);
     width: 200px;
     background-color: #000000;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 
 a.spotify-logo img{
@@ -81,8 +81,8 @@ a.spotify-logo img{
 /* MAIN */ /* PLAYLIST SECTION */
 div.main-albums{
     width: calc(100% - 200px);
+    overflow-y: auto;
 }
-
 
 /* MAIN */ /* SIDEBAR SECTION */
 img.sidebar-img{
@@ -128,7 +128,6 @@ span.sidebar-text{
     font-size: 1.3rem;
     font-weight: 600;
 }
-
 
 a.sidebar-icon > i{
     color: #a3a3a3;
