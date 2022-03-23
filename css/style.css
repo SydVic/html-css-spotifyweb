@@ -266,7 +266,7 @@ div.content-nav{
 div.content-nav li{
     display: inline-block;
     margin: 0 1rem;
-    border-bottom: 2px solid var(--main-bg-c);
+    border-bottom: 2px solid transparent;
 }
 
 div.content-nav a{
@@ -286,6 +286,12 @@ div.content-nav li:hover{
 }
 
 /* MAIN */ /* CONTENT ITEMS*/
+div.row{
+    flex-wrap: wrap;
+    /* TEST */
+    border: 1px solid rgb(218, 25, 201);
+}
+
 div.content-items{
     color: #ffffff;
     padding: 1rem 2rem 2rem 2rem;
@@ -297,10 +303,10 @@ div.content-items{
 } */
 
 div.content-card{
-    width: calc((100% / 6) - 2rem);
-    margin: 0 1rem 0 1rem;
+    width: calc((100% / 6) - 10px);
+    margin: 0 5px 0 5px;
     /* test */
-    border: 1px solid lime;
+    border: 1px solid rgb(55, 233, 224);
 }
 
 div.content-img img{
@@ -322,6 +328,11 @@ div.content-text p.content-subtitle{
     font-size: 1.4rem;
     font-weight: bold;
     color: #858585;
+}
+
+.rad50-flow{
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 /* MAIN */ /* CONTENT ITEMS*/ /* LAYOVER EFFECT */
@@ -358,6 +369,25 @@ a.play-layover{
     color: white;
 }
 
+/* MAIN */ /* CONTENT ITEMS */ /* MEDIAQUERY */
+@media screen and (max-width: 1100px){
+    div.content-card{
+        width: calc((100% / 4) - 10px);
+    }
+}
+
+@media screen and (max-width: 768px){
+    div.content-card{
+        width: calc((100% / 2) - 10px);
+    }
+}
+
+@media screen and (max-width: 600px){
+    section.content{
+        width: calc(100% - var(--sidebar-width-xs));
+    }
+}
+
 /* FOOTER */
 footer{
     width: 100%;
@@ -368,15 +398,14 @@ footer{
     align-items: center;
 }
 
-div.footer-nav-left,
-div.footer-nav-right{
-    margin: 0 1.5rem 0 1.5rem;
-}
-
 /* FOOTER */ /* FOOTER NAV LEFT */ 
 div.footer-nav-left{
     flex-direction: row;
     align-items: center;
+    margin-left: 1.5rem;
+
+    /* TEST */
+    border: 1px solid rgb(226, 45, 211);
 }
 
 div.footer-nav-img > img{
@@ -415,7 +444,12 @@ div.footer-nav-icons a:hover{
     color: #ffffff;
 }
 
-/* FOOTER */ /* FOOTER NAV CENTER */ 
+/* FOOTER */ /* FOOTER NAV CENTER */
+div.footer-nav-center{
+    min-width: 450px;
+    border: 1px solid rgb(226, 45, 211);
+}
+
 div.music-controls-icons{
     margin-bottom: 1rem;
     justify-content: center;
@@ -449,7 +483,7 @@ span.time{
 }
 
 span.time-bar-grey{
-    width: 35vw;
+    width: 30vw;
     border: 4px solid #565656;
     border-radius: 4px;
     display: inline-block;
@@ -482,6 +516,14 @@ div.dot{
 
 a.time-bar-lightgrey:hover div.dot{
     display: inline-block;
+}
+
+/* FOOTER */ /* FOOTER NAV RIGHT */
+div.footer-nav-right{
+    margin-right: 1.5rem;
+
+    /* test */
+    border: 1px solid rgb(226, 45, 211);
 }
 
 div.footer-nav-right > a{
