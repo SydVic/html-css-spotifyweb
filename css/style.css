@@ -126,6 +126,7 @@ span.sidebar-text{
 nav.sidebar-nav li {
     margin-top: 1.5rem;
     padding-left: 2rem;
+    border-left: 3px solid transparent;
 }
 
 /* MAIN */ /* SIDEBAR NAV TOP */ /* MENU */
@@ -149,6 +150,7 @@ h3.sidebar-list-title{
     color: #f5f5f5;
     padding-left: 2rem;
     margin-top: 2.5rem;
+    border-left: 3px solid transparent;
 }
 
 div.sidebar-playlists ul{
