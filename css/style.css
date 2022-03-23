@@ -261,6 +261,7 @@ section.content{
 div.content-nav{
     width: 100%;
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 div.content-nav li{
@@ -288,8 +289,12 @@ div.content-nav li:hover{
 /* MAIN */ /* CONTENT ITEMS*/
 div.row{
     flex-wrap: wrap;
-    /* TEST */
-    border: 1px solid rgb(218, 25, 201);
+    margin: 2rem 0 2.5rem 0;
+}
+
+h2.row-title{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 div.content-items{
@@ -297,16 +302,9 @@ div.content-items{
     padding: 1rem 2rem 2rem 2rem;
 }
 
-/* div.content-items > h2{
-    font-size: 2.5rem;
-    margin: 2rem 0 2.5rem 0;
-} */
-
 div.content-card{
     width: calc((100% / 6) - 10px);
     margin: 0 5px 0 5px;
-    /* test */
-    border: 1px solid rgb(55, 233, 224);
 }
 
 div.content-img img{
@@ -324,7 +322,7 @@ div.content-text p.content-title{
     margin: .8rem 0 .5rem 0;
 }
 
-div.content-text p.content-subtitle{
+p.content-subtitle{
     font-size: 1.4rem;
     font-weight: bold;
     color: #858585;
