@@ -403,9 +403,6 @@ div.footer-nav-left{
     flex-direction: row;
     align-items: center;
     margin-left: 1.5rem;
-
-    /* TEST */
-    border: 1px solid rgb(226, 45, 211);
 }
 
 div.footer-nav-img > img{
@@ -448,7 +445,6 @@ div.footer-nav-icons a:hover{
 div.footer-nav-center{
     width: 40%;
     min-width: 200px;
-    border: 1px solid rgb(226, 45, 211);
 }
 
 div.music-controls-icons{
@@ -531,9 +527,6 @@ div.footer-nav-right{
     width: 200px;
     min-width: 200px;
     margin-right: 1.5rem;
-
-    /* test */
-    border: 1px solid rgb(226, 45, 211);
 }
 
 div.footer-nav-right > a{
