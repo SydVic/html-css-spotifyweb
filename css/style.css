@@ -312,6 +312,7 @@ div.content-items{
 div.content-card{
     width: calc((100% / 6) - 10px);
     margin: 0 5px 0 5px;
+    cursor: pointer;
 }
 
 div.content-img img{
@@ -513,9 +514,9 @@ a.dot-time-bar{
     /* display: none; */
 } 
 
-a.time-bar-lightgrey:hover a.dot-time-bar{
+/* a.time-bar-lightgrey:hover a.dot-time-bar{
     display: block;
-}
+} */
 
 /* FOOTER */ /* FOOTER NAV RIGHT */
 div.footer-nav-right{
