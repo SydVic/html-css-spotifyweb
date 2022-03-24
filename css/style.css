@@ -514,6 +514,7 @@ div.volume-bar{
     height: 6px;
     background-color: var(--grey);
     border-radius: 6px;
+    cursor: pointer;
 }
 
 div.volume-bar-short{
