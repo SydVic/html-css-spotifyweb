@@ -331,8 +331,12 @@
                     <img src="img/sinister.jpeg" alt="">
                 </div>
                 <div class="footer-nav-text">
-                    <span>Sinister</span>
-                    <a href="">Nome Brano</a>
+                    <a href="">
+                        <h4>Sinister</h4>
+                    </a>
+                    <a href="">
+                        <p>Nome Brano</p>
+                    </a>
                 </div>
                 <div class="footer-nav-icons">
                     <a href="">
@@ -347,51 +351,65 @@
 
             <!-- FOOTER-NAV CENTER -->
             <div class="footer-nav-center">
-                <div class="music-controls-icons flex">
-                    <a href="">
-                        <i class="fas fa-random"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-step-backward"></i>
-                    </a>
-                    <a class="play" href="">
-                        <i class="far fa-play-circle"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-step-forward"></i>
-                    </a>
-                    <a href="">
-                        <i class="fas fa-redo-alt"></i>
-                    </a>
+                <div class="music-controls-icons">
+                    <ul class="flex">
+                        <li>
+                            <a href="">
+                                <i class="fas fa-random"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-step-backward"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="play" href="">
+                                <i class="far fa-play-circle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-step-forward"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fas fa-redo-alt"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="music-controls-bar flex">
-                    <span class="time">0:25</span>
-                    <div class="time-bar pos-relative">
-                        <span class="time-bar-grey"></span>
-                        <a class="time-bar-lightgrey" href=""></a>
-                        <a class="dot-time-bar" href=""></a>                                          
+                    <div class="time">0:25</div>
+                    <div class="volume-bar">
+                        <div class="volume-bar-short pos-relative">
+                            <div class="volume-bar-dot"></div>
+                        </div>
                     </div>
-                    <span class="time">4:35</span> 
-                </div>            
+                    <div class="time">4:35</div>
+                </div>
             </div>
             <!-- /FOOTER-NAV CENTER -->
 
             <!-- FOOTER-NAV RIGHT -->
             <div class="footer-nav-right">
-                <a href="">
-                    <i class="fas fa-list"></i>
-                </a>
-                <a href="">
-                    <i class="fas fa-desktop"></i>
-                </a>
-                <a href="">
-                    <i class="fas fa-volume-up"></i>
-                </a>
-                <div class="volume-bar pos-relative">
-                    <span class="volume-bar-grey"></span>
-                    <a class="volume-bar-lightgrey" href=""></a>
-                    <a class="dot-volume-bar" href=""></a>
-                </div>
+                <ul class="footer-right-menu flex">
+                    <li>
+                        <i class="fas fa-list"></i>
+                    </li>
+                    <li>
+                        <i class="fas fa-desktop"></i>
+                    </li>
+                    <li class="volume-control flex">
+                        <i class="fas fa-volume-up"></i>
+                        <div class="volume-bar">
+                            <div class="volume-bar-short pos-relative">
+                                <div class="volume-bar-dot"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <!-- /FOOTER-NAV RIGHT -->
         </footer>
@@ -400,3 +418,4 @@
     <!-- /GENERAL CONTAINER -->
 </body>
 </html>
+
