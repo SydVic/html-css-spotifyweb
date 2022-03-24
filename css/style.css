@@ -539,3 +539,43 @@ div.volume-bar:hover div.volume-bar-short{
 div.volume-bar:hover div.volume-bar-dot{
     display: block;
 }
+
+/* FOOTER */ /* MEDIAQUERY */
+@media screen and (max-width: 768px){
+    div.footer-nav-left{
+        width: 200px;
+    }
+    div.footer-nav-center{
+        width: 30%;
+    }
+    div.music-controls-icons ul{
+        font-size: 1.5rem;
+    }
+    a.play{
+        font-size: 2rem;
+    }
+    div.footer-nav-right{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 600px){
+    div.footer-nav-left{
+        width: 150px;
+    }
+    div.footer-nav-center{
+        width: 30%;
+    }
+    div.music-controls-icons ul a{
+        margin: 0 5px;
+    }
+    div.music-controls-icons ul{
+        font-size: 1.5rem;
+    }
+    a.play{
+        font-size: 2rem;
+    }
+
+    div.footer-nav-right{
+        width: 150px;
+    }
+}
